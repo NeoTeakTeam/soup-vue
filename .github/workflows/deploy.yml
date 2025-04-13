@@ -39,6 +39,7 @@ jobs:
               with:
                   name: build-artifact
                   path: dist
+                  if-no-files-found: error
 
     deploy:
         needs: build
